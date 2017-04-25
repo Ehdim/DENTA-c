@@ -1,0 +1,116 @@
+@import "_mixin.scss";
+
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+#timeTable{
+    .container{
+        .menu{
+            padding: 29px;
+            @media (max-width: 991px){
+                        padding: 0;
+                    }
+            ul{
+                list-style: none;
+                border-bottom: 1px solid #e5e5e5;
+                padding: 0; 
+                 @media (max-width: 991px){
+                        border:none;
+                    }
+
+                li{
+                    font-size: 18px;
+                    line-height: 1.33;
+                    font-family: $fontOswald;
+                    letter-spacing: 0.06em;
+                    color: #868686;
+                    font-weight: 400;
+                    display: inline-block;
+                    padding: 0 0 7px;
+                    cursor: pointer;
+                    margin-right: 50px;
+                    text-transform: uppercase;
+                    span{
+                        position: absolute;
+                        right: 98px;
+                    }
+                    i{
+                        display: none;
+                        @media (max-width: 991px){
+                            display: inline;
+                            float: right;
+                            color: #868686;
+                            font-size: 26px;
+                        }
+                    }
+                    @media (max-width: 991px){
+                        border-top: 1px solid #e5e5e5;
+                        color: $backgroundBlue;
+                        padding: 11px 33px 15px 20px;
+                        transition: color .2s ease-in;
+                        text-transform: capitalize;
+                        font-weight: 700;
+                        font-size: 15px;
+                        font-family: $fontLato;
+                        height: 45px;
+                        overflow: hidden;
+                    }
+                }
+                .active{
+                    border-bottom:1px solid red;
+                     @media (max-width: 991px){
+                        border:none;
+                        border-top: 1px solid #e5e5e5;
+                        height: auto;
+                        // overflow: hidden;
+                    }
+                }
+            }
+        }
+        #scroll{
+            overflow-x: auto;
+            margin-bottom:40px;
+            @media (max-width: 991px){
+                margin-top: 35px;
+            }
+            table{
+            width:99%;
+            min-width: 767px;
+            thead{
+                tr{
+                    td{
+                        font-size: 15px;
+                        line-height: 1.6;
+                        color: #434445;
+                        font-family: $fontLato;
+                        font-weight: 400;
+                        border-bottom: 1px solid #868686;
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                        line-height: 1.6;
+                    td{
+                        position: relative;
+                        font-size: 15px;
+                        padding-bottom: 60px;
+                        border-bottom: 1px solid #e5e5e5;
+                        font-family: $fontLato;
+                        color: #434445;
+                        .doctor{
+                            position: absolute;
+                            // z-index: 20;
+                            top: 0;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            }
+        }    
+    }
+}
