@@ -94,3 +94,12 @@ $('.bar_item').click(function(e){
     }
   });
 });
+
+$('.respo-click').click(function(e){
+  $(this).toggleClass("active");
+  $(this).toggleClass("fa-bars");
+  $(this).toggleClass("fa-arrow-left");
+  $(".js-side").toggleClass('active').css({
+    'top':'70px'
+  });
+})

@@ -48,4 +48,21 @@ $('.search-click').click(function(e){
       $(".js-scrolltop").removeClass("active");
     }
   });
+$(".js_inner i").eq(0).click(function (e) {
+    $(".js_inner .js__inner").eq(0).toggleClass("active1");
+  })
+  $(".js_inner i").eq(1).click(function (e) {
+    $(".js_inner .js__inner").eq(1).toggleClass("active1");
+  })
+    $(".js_inner i").eq(2).click(function (e) {
+    $(".js_inner .js__inner").eq(2).toggleClass("active1");
+  })
+$('.respo-click').click(function(e){
+  $(this).toggleClass("active");
+  $(this).toggleClass("fa-bars");
+  $(this).toggleClass("fa-arrow-left");
+  $(".js-side").toggleClass('active').css({
+    'top':'70px'
+  });
+})
 })
